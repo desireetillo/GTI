@@ -9,7 +9,7 @@ module load R
 module load bedtools
 
 # EDIT ME
-src_directory=/data/GAU/projects/Lebensohn_2021/GT_pipeline/src
+src_directory=/data/GAU/projects/Lebensohn_2021/Gene_Trap_Insertions/src
 
 ctrl_bed=$1
 treat_bed=$2

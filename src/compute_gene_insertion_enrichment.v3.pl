@@ -7,7 +7,7 @@ use strict;
 # then feeds to Rscript to compute p-vals and generate figures
 
 # EDIT ME
-my $pipeline_path="/data/GAU/projects/Lebensohn_2021/GT_pipeline";
+my $pipeline_path="/data/GAU/projects/Lebensohn_2021/Gene_Trap_Insertions";
 
 my $ctrl_bed = $ARGV[0];
 my $sort_bed = $ARGV[1];

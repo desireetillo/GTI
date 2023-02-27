@@ -7,7 +7,7 @@
 #SBATCH --time=8:00:00
 
 # src dir (EDIT THIS)
-pipeline_path="/data/GAU/projects/Lebensohn_2021/GT_pipeline/src";
+pipeline_path="/data/GAU/projects/Lebensohn_2021/Gene_Trap_Insertions/src";
 
 
 # required files:

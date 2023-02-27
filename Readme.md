@@ -26,13 +26,13 @@ Additional files:
 
 * If setting up for the first time do the following:  
 	* Make perl utils executable:
-	  	`	cd src;
-  			chmod+x *pl`
+	  	`cd src;
+  		chmod+x *pl`
 	* Edit path to `src/` directory in the following scripts:
 		- line 10 of `Step1_GT_trim_align.sh`
 		- line 12 of `Step2_enrichment.sh`
 		- line 10 of `src/compute_gene_insertion_enrichment.v3.pl`
-
+	* unzip exons: `cd annotations; gunzip ucsc_refseq_hg38.exons.bed.gz`
 
 ## Steps
 

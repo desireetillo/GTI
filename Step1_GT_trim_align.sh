@@ -64,7 +64,7 @@ python $pipeline_path/samToBED.py -i $samfile -o tmp.$prefix.bed
 sort -k1,1 -k2,2n tmp.$prefix.bed >$bedOutput
 
 module load ucsc/442
-cat $bedOutput | ${pipeline_path}/add_column.pl -s "$prefix" | ${pipeline_path}/add_column.pl -s "1000" | ${pipeline_path}/uniquify.pl -f -c 6  | ${pipeline_path}/${pipeline_path}/cut.pl -f 1-3,7,8,6 >tmp.$prefix.bed
+cat $bedOutput | ${pipeline_path}/add_column.pl -s "$prefix" | ${pipeline_path}/add_column.pl -s "1000" | ${pipeline_path}/uniquify.pl -f -c 6  | ${pipeline_path}/cut.pl -f 1-3,7,8,6 >tmp.$prefix.bed
 bedToBigBed tmp.$prefix.bed $chromsizes $bbOutput
 rm -f tmp.$prefix.bed
 

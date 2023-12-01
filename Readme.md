@@ -2,6 +2,9 @@
 
 Built for running on NIH's [biowulf HPC](https://hpc.nih.gov)
 
+## Overview
+
+
 ## Dependencies
    
   * trimmomatic/0.39
@@ -82,7 +85,14 @@ This will write alignment statistics to a single `<output_dir>.csv` file
 
 This step performs enrichment analyses for each GT screen given a control bed file and a sorted bed file.
  
-Computes counts for insertion types in control (unsorted) and sorted samples, enrichment FDR corrected pvalues (v1 and v2 p-values), and Intronic Gene Trap Insertion Orientation Bias  (IGTIOB) score for the sorted sample.
+Computes counts for insertion types in control (unsorted) and sorted samples, enrichment FDR corrected pvalues (v1 and v2 p-values), and Intronic Gene Trap Insertion Orientation Bias (IGTIOB) score for the sorted sample.
+
+Score | Description 
+-----|-----
+v1 p-value | FDR-corrected one-sided Fisher exact test  p-value computed from comparing the relative frequency at which that gene harbored inactivating  GT insertions (sense, antisense exonic + sense intronic) in the sorted cells compared to the relative frequency at which the gene carried any GT insertion in the control dataset.  
+v2 p-value | FDR-corrected one-sided Fisher exact test  p-value	 computed from comparing all insertions in sorted cells vs. all insertions in the control population
+Intronic Gene Trap Insertion Orientation Bias  (IGTIOB) score | IGTIOB = log2(S/A) x ln(S x A), where ‘S’ and ‘A’ equal one plus the number of unique sense or antisense intronic GT insertions, respectively, in a given gene. High positive IGTIOB scores generally indicate genes whose disruption promotes the phenotype enriched for during the screen.
+
 
 Output will be writen to tab-delimited text files `<treatment_prefix>`.tab
 

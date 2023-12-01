@@ -2,9 +2,6 @@
 
 Built for running on NIH's [biowulf HPC](https://hpc.nih.gov)
 
-## Overview
-
-
 ## Dependencies
    
   * trimmomatic/0.39

@@ -8,7 +8,7 @@
 
 # src dir (EDIT THIS)
 pipeline_path="/data/GAU/projects/Lebensohn_2021/Gene_Trap_Insertions/src"
-
+export PERL_HOME=$pipeline_path/perl_lib
 
 # required files:
 genome_seq="/fdb/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa"

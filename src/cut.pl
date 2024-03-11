@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
-require "src/libfile.pl";
-require "src/load_args.pl";
+require "$ENV{PERL_HOME}/libfile.pl";
+require "$ENV{PERL_HOME}/load_args.pl";
 
 
 use strict;

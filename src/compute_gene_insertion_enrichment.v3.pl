@@ -8,6 +8,7 @@ use strict;
 
 # EDIT ME
 my $pipeline_path="/data/GAU/projects/Lebensohn_2021/Gene_Trap_Insertions";
+$ENV{PERL_HOME} = $pipeline_path/src/perl_lib
 
 my $ctrl_bed = $ARGV[0];
 my $sort_bed = $ARGV[1];

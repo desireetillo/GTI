@@ -3,10 +3,10 @@
 use strict;
 use Math::Complex;
 
-require "$ENV{PERL_HOME}/Lib/load_args.pl";
-require "$ENV{PERL_HOME}/Lib/libfile.pl";
-require "$ENV{PERL_HOME}/Lib/format_number.pl";
-require "$ENV{PERL_HOME}/Sequence/sequence_helpers.pl";
+require "src/load_args.pl";
+require "src/libfile.pl";
+require "src/format_number.pl";
+require "src/sequence_helpers.pl";
 
 if ($ARGV[0] eq "--help")
 {

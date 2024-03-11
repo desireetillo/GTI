@@ -2,7 +2,7 @@
 
 #use strict;
 
-require "$ENV{PERL_HOME}/Lib/load_args.pl";
+require "src/load_args.pl";
 
 if ($ARGV[0] eq "--help")
 {

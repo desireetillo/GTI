@@ -10,6 +10,7 @@ module load bedtools
 
 # EDIT ME
 src_directory=/data/GAU/projects/Lebensohn_2021/Gene_Trap_Insertions/src
+export PERL_HOME=$pipeline_path/perl_lib
 
 ctrl_bed=$1
 treat_bed=$2
